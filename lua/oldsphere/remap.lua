@@ -25,3 +25,14 @@ vim.keymap.set("n", "J", "mzJ`z")
 
 -- Add WSL Copy
 vim.keymap.set("v", "<C-c>", ":w !clip.exe<CR><CR>")
+
+-- Fold Levles
+vim.keymap.set('n', 'z0', function()
+    vim.cmd('set foldlevel=0')
+end, { noremap = True, silent = True})
+vim.keymap.set('n', 'z1', function()
+    vim.cmd('set foldlevel=1')
+end, { noremap = True, silent = True})
+vim.keymap.set('n', 'z2', function()
+    vim.cmd('set foldlevel=2')
+end, { noremap = True, silent = True})
